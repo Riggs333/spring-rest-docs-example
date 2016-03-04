@@ -1,0 +1,16 @@
+[[resources-get-users]]
+== Listing users
+
+A `GET` request will list all of the users.
+
+=== Example request
+
+include::{snippets}/document-users-resource/http-request.adoc[]
+
+=== Example curl
+
+include::{snippets}/document-users-resource/curl-request.adoc[]
+
+=== Example response
+
+include::{snippets}/document-users-resource/http-response.adoc[]
