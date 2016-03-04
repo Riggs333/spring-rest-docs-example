@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/users")
 public class UserController {
 
+	private UserRepository userRepo;
+
 	@Autowired
-	UserRepository userRepo;
+	public UserController(UserRepository userRepo) {
+		this.userRepo = userRepo;
+	}
 
 	@RequestMapping(method = RequestMethod.GET)
 	public Iterable<User> getUsers() {
